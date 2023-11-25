@@ -114,6 +114,7 @@ bool Executor::run_simulation(JobVectorOfSimulator& job_vector_of_simulator, Job
         if(job->get_actual_start_time() < 0 || job->get_actual_finish_time() > job->get_actual_deadline())
         {
             std::cout <<"DEADLINE MISS IN REAL CYBER SYSTEM" << std::endl;
+            // Logger::real_cyber_schedule_logger201914388(job->get_actual_start_time(), job->get_job_id(), "DEADLINE MISS");
         }
     }
     //std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - utils::simulator_start_time).count() <<std::endl;

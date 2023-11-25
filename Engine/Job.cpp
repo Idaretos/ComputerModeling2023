@@ -576,6 +576,7 @@ void Job::run_function()
         {
             std::shared_ptr<TaggedData> current_data = global_object::tagged_data_read.at(global_object::tagged_data_read.size()-1);
             global_object::tagged_data_read.clear();
+            Logger::task_read_write_logger_201914388("a");
         }
         run();
   
